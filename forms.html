@@ -8,23 +8,25 @@
 <body>
     <fieldset>
         <legend>Personal inform </legend>
+        <label for="username">Firstname</label>
         <form method="get" action="process.php" target="_blank">
-            Firstname :
-            <input type="text" name="Firstname">
+            <input type="text" name="Firstname" id="username">
             <br>
             <br>
-            LastName:
-            <input type="text" name="LastName">
+        <label for="LastName">LastName</label>
+            <input type="text" name="LastName"id="LastName">
             
-            Gender:
-            <input type="radio" name="Gender" value="male">Male
-            <input type="radio" name="Gender" value="female">Female
+        Gender:
+            
+            <input type="radio" name="Gender" value="male" id="male"><label for="male">Male</label>
+            
+            <input type="radio" name="Gender" value="female" id="female"> <label for="female">Female</label>
             <br>
             Qualification:
-            <input type="checkbox" name="Qualification" value="Phd">Phd
-            <input type="checkbox" name="Qualification" value="Mtech">Mtech
-            <input type="checkbox" name="Qualification" value="Btech">Btech
-            <input type="checkbox" name="Qualification" value="BBA">BBA
+            <input type="checkbox" name="Qualification" value="Phd" id="Phd"><label for="Phd">Phd</label>
+            <input type="checkbox" name="Qualification" value="Mtech"id="Mtech"><label for="Mtech">Mtech</label>
+            <input type="checkbox" name="Qualification" value="Btech"id="Btech"><label for="Btech">Btech</label>
+            <input type="checkbox" name="Qualification" value="BBA"id="BBA"><label for="BBA">BBA</label>
             <br>
             Address:
             <textarea name="Address" rows="10" cols="50" placeholder="Enter your official address"></textarea>
@@ -46,7 +48,6 @@
                 <option value="react">React</option>
                 <option value="javascript">Javascript</option>
             </select>
-
         </form>
     </fieldset>
 </body>
