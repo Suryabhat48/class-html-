@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Personal inform </legend>
+        <form method="get" action="process.php" target="_blank">
+            Firstname :
+            <input type="text" name="Firstname">
+            <br>
+            <br>
+            LastName:
+            <input type="text" name="LastName">
+            
+            Gender:
+            <input type="radio" name="Gender" value="male">Male
+            <input type="radio" name="Gender" value="female">Female
+            <br>
+            Qualification:
+            <input type="checkbox" name="Qualification" value="Phd">Phd
+            <input type="checkbox" name="Qualification" value="Mtech">Mtech
+            <input type="checkbox" name="Qualification" value="Btech">Btech
+            <input type="checkbox" name="Qualification" value="BBA">BBA
+            <br>
+            Address:
+            <textarea name="Address" rows="10" cols="50" placeholder="Enter your official address"></textarea>
+            <br>
+            <br>
+            State:
+            <select name="ustate">
+                <option value="select">Select State</option>
+                <option value="ka">Karnataka</option>
+                <option value="tl">Tamil Nadu</option>
+                <option value="ap">Andhra pradesh</option>
+                <option value="ts">Telangana</option>
+            </select>
+            <input type="submit" name="Submit">
+            Technical skills:
+            <select name="skills" >
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="react">React</option>
+                <option value="javascript">Javascript</option>
+            </select>
+
+        </form>
+    </fieldset>
+</body>
+</html>
